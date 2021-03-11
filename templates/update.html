@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <form action="/update/{{todo.sno}}" method="POST">
+        <div class="my-4">
+          <label class="form-label">Enter The Title</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Title"
+            id="title"
+            name="title"
+            value="{{todo.title}}"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"
+            >Todo Desctiption</label
+          >
+          <textarea
+            name="desc"
+            id="decs"
+            cols="30"
+            rows="5"
+            class="form-control"
+          >{{todo.desc}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Update</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock body %}

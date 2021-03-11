@@ -1,0 +1,51 @@
+//////////////// Virtual Env in python
+it is a isolated location in your system and you can install all module here. it allow to use multipul version in diffrent env.
+Note 1:- we need to activate the env first.
+note2:- if your Virtual env not activating ur facing err make sure your change or Allow Set-ExecutionPolicy unrestricted in powerShell.not for all if you are facing err then use that.
+
+## process
+1. install virtual env package use-> pip install virtualenv
+2. Now Activate Env Using .\env\Scripts\activate.ps1   Now Your and in env
+
+start your work now. 
+
+//////////////////////////  Starter template Of Flask
+
+from flask import Flask
+import t.py;
+
+app = Flask(__name__)
+
+@app.route('/')                       // initial route
+def hello_world():
+    return 'Hello, World!'
+
+
+if __name__ == '__main__':
+   app.run(debug=True)            ////// dev server
+
+
+///////////////////////////  folder structure in Flask
+1. static  // it should be in root directory
+2. templates  // it should be in root directory
+
+
+////////////////////////////// Database SqlAlchamy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
